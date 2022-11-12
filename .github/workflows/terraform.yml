@@ -57,7 +57,8 @@ jobs:
     name: 'Terraform'
     runs-on: ubuntu-latest
     environment: production
-    env:
+    defaults:
+      run:
      workding-directory: ./tf
     
 
@@ -65,6 +66,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        workding-directory: ./tf
 
     steps:
     # Checkout the repository to the GitHub Actions runner
