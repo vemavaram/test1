@@ -59,14 +59,14 @@ jobs:
     environment: production
     defaults:
       run:
-     workding-directory: ./workflows
+     workding-directory: ./main.tf
     
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run:
         shell: bash
-        workding-directory: ./workflows
+        workding-directory: ./main.tf
 
     steps:
     # Checkout the repository to the GitHub Actions runner
