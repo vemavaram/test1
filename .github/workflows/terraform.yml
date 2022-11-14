@@ -57,9 +57,8 @@ jobs:
     name: 'Terraform'
     runs-on: ubuntu-latest
     environment: production
-    defaults:
-      run:
-     working-directory: ./workflows
+    env:
+     working-directory: ./tf
     
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
