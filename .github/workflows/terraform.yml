@@ -59,14 +59,14 @@ jobs:
     environment: production
     defaults:
       run:
-     working-directory: ./tf
+     working-directory: ./workflows
     
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run:
         shell: bash
-        working-directory: ./tf
+        
 
     steps:
     # Checkout the repository to the GitHub Actions runner
